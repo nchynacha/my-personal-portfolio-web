@@ -8,7 +8,7 @@
 /* Font */
 @font-face {
    font-family: 'Magnetar';
-   src: url('.assets/fonts/magnetar_2/magnetar.otf') format('opentype');
+   src: url('assets/fonts/magnetar_2/magnetar.otf') format('opentype');
    font-weight: normal;
    font-style: normal;
 }
@@ -20,7 +20,7 @@ body, html {
 }
 
 body {
-   background: url(./assets/images/bg.png) no-repeat center/cover fixed;
+   background: url(../assets/images/bg.png) no-repeat center/cover fixed;
    font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
 }
 
