@@ -5,6 +5,12 @@
    box-sizing: border-box;
 }
 
+:root {
+   --primary-color: #0db08a;
+   --secondary-color: #ef7c8e;
+   
+}
+   
 /* Font */
 @font-face {
    font-family: 'Magnetar';
@@ -20,7 +26,7 @@ body, html {
 }
 
 body {
-   background: url(./assets/images/bg.png) no-repeat center/cover fixed;
+   background: url(../assets/images/bg.png) no-repeat center/cover fixed;
    font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
 }
 
@@ -46,7 +52,7 @@ body {
 
 .nav-item a {
    position: relative;
-   color: #ef7c8e;
+   color: var(--secondary-color);
    text-decoration: none;
    font-size: 1.3rem;
    padding: 5px 0;
@@ -61,13 +67,13 @@ body {
    bottom: -3px;
    width: 0;
    height: 2px;
-   background-color: #0db08a;
+   background-color: var(--primary-color);
    transition: all 0.3s ease-in-out;
    transform: translateX(-50%);
 }
 
 .nav-item a:hover {
-   color: #0db08a;
+   color: var(--primary-color);
 }
 
 .nav-item a:hover::after {
@@ -75,7 +81,7 @@ body {
 }
 
 .nav-item a.active {
-   color: #0db08a;
+   color: var(--primary-color);
    font-weight: 800;
    font-size: 1.5rem;
 }
@@ -103,7 +109,7 @@ body {
 .animated-text {
    font-size: 6vw;
    font-family: 'Magnetar', sans-serif;
-   color: #0db08a;
+   color: var(--primary-color);
    display: flex;
    align-items: center;
    gap: 1vw;
@@ -181,7 +187,7 @@ body {
 
 .about-container {
    width: 100%;
-   color: #0db08a;
+   color: var(--primary-color);
    animation: fadeInDown 2s ease-out;
 }
 
@@ -236,7 +242,7 @@ body {
 }
 
 .skills-2 {
-   color: #0db08a;
+   color: var(--primary-color);
    width: 200px;
    height: 150px;
    background: url(./assets/images/oval.png) no-repeat center/cover;
@@ -333,7 +339,7 @@ hr {
    left: 50%;
    transform: translate(-50%, -50%);
    color: #ffffff;
-   background-color: #ef7c8e;
+   background-color: var(--secondary-color);
    padding: 10px 15px;
    font-size: 1.1em;
    font-weight: 700;
@@ -461,7 +467,7 @@ p {
       height: 3px;
       margin: 5px auto;
       transition: all 0.3s ease-in-out;
-      background-color: #0db08a;
+      background-color: var(--primary-color);
    }
 
    .hamburger.active .bar:nth-child(2) {
@@ -481,8 +487,8 @@ p {
       left: -100%;
       top: 60px;
       gap: 0;
-      color: #0db08a;
-      background-color: #eda8b3;
+      color: var(--primary-color);
+      background-color: var(--secondary-color);
       flex-direction: column;
       width: 100%;
       height: 250px;
